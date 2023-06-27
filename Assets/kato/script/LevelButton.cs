@@ -2,6 +2,12 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+public enum SceneName
+{
+    TestStage,
+    GameSelect
+    // 他のシーンの名前
+}
 
 public class LevelButton : MonoBehaviour
 {
@@ -20,6 +26,11 @@ public class LevelButton : MonoBehaviour
         allLevelButtons.Remove(this);
     }
 
+    public static void Load(SceneName scene)
+    {
+        SceneManager.LoadScene(scene.ToString());
+    }
+
     void Start()
     {
         btn = GetComponent<Button>();
@@ -31,7 +42,7 @@ public class LevelButton : MonoBehaviour
     void OnButtonClicked()
     {
         ProgressManager.CompleteLevelIndex(levelIndex);
-        SceneManager.LoadScene("TestStage");  //Hence change "GameScene" to the appropriate scene name.
+        Load(SceneName.TestStage);
     }
 
     public void RefreshButtonInteractableState()

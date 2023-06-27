@@ -8,8 +8,8 @@ public class GameSceneManager : MonoBehaviour
     {
         if (/*ゲームが終了したら*/true)
         {
+            LevelButton.Load(SceneName.GameSelect);
             // 選択シーンに戻ります
-            SceneManager.LoadScene("SelectionScene"); // "SelectionScene"はあなたが設定した選択シーンの名前に書き換えてください。
         }
     }
 }

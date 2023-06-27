@@ -2,7 +2,7 @@
 
 public static class ProgressManager
 {
-    private const string KeyActiveLevelIndex = "ActiveLevelIndex";
+    public const string KeyActiveLevelIndex = "ActiveLevelIndex";
 
     public static int GetCompletedLevelIndex()
     {
@@ -17,5 +17,12 @@ public static class ProgressManager
             PlayerPrefs.SetInt(KeyActiveLevelIndex, levelIndex);
             PlayerPrefs.Save();
         }
+    }
+
+    public static void ResetLevelIndex()
+    {
+        PlayerPrefs.SetInt(ProgressManager.KeyActiveLevelIndex, 0);
+        PlayerPrefs.Save();
+        LevelButton.RefreshAllButtons();
     }
 }

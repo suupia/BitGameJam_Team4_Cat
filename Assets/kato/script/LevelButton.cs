@@ -41,7 +41,6 @@ public class LevelButton : MonoBehaviour
 
     void OnButtonClicked()
     {
-        ProgressManager.CompleteLevelIndex(levelIndex);
         Load(SceneName.TestStage);
     }
 

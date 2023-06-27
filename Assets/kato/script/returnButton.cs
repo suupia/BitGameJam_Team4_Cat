@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class returnButton : MonoBehaviour
 {
     // Start is called before the first frame update
     private Button btn;
-
+    public int levelIndex;
     void Start()
     {
         btn = GetComponent<Button>();
@@ -17,6 +14,7 @@ public class returnButton : MonoBehaviour
 
     void OnButtonClicked()
     {
-        SceneManager.LoadScene("GameSelect");
+        ProgressManager.CompleteLevelIndex(levelIndex);
+        LevelButton.Load(SceneName.GameSelect);
     }
 }

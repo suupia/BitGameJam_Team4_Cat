@@ -1,4 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public enum SceneName
+{
+    TestStage,
+    GameSelect
+    // 他のシーンの名前
+}
 
 public static class ProgressManager
 {
@@ -24,5 +32,16 @@ public static class ProgressManager
         PlayerPrefs.SetInt(ProgressManager.KeyActiveLevelIndex, 0);
         PlayerPrefs.Save();
         LevelButton.RefreshAllButtons();
+    }
+
+    public static void Load(SceneName scene)
+    {
+        SceneManager.LoadScene(scene.ToString());
+    }
+
+    public static void ClearStage(int levelIndex)
+    {
+        CompleteLevelIndex(levelIndex);
+        Load(SceneName.GameSelect);
     }
 }

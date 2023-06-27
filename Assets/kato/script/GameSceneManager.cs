@@ -7,7 +7,7 @@ public class GameSceneManager : MonoBehaviour
     {
         if (/*ゲームが終了したら*/true)
         {
-            LevelButton.Load(SceneName.GameSelect);
+            ProgressManager.Load(SceneName.GameSelect);
             // 選択シーンに戻ります
         }
     }

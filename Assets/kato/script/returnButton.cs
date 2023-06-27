@@ -14,7 +14,6 @@ public class returnButton : MonoBehaviour
 
     void OnButtonClicked()
     {
-        ProgressManager.CompleteLevelIndex(levelIndex);
-        LevelButton.Load(SceneName.GameSelect);
+        ProgressManager.ClearStage(levelIndex);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class returnButton : MonoBehaviour
+public class DebugClearButton : MonoBehaviour
 {
     // Start is called before the first frame update
     private Button btn;
@@ -10,7 +10,6 @@ public class returnButton : MonoBehaviour
     {
         btn = GetComponent<Button>();
         btn.onClick.AddListener(OnButtonClicked);
-        this.gameObject.SetActive(false);
     }
 
     void OnButtonClicked()

@@ -709,7 +709,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
+<<<<<<< HEAD
   orthographic size: 30.83
+=======
+  orthographic size: 13.19
+>>>>>>> 055c029e954cbe51c385041ee4d8f27522b420b0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2258,7 +2262,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a688f079d667bb34d80c226de49e21e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   forceAmount: 10
+=======
+  speed: 1000
+>>>>>>> 055c029e954cbe51c385041ee4d8f27522b420b0
 --- !u!212 &721651472
 SpriteRenderer:
   m_ObjectHideFlags: 0

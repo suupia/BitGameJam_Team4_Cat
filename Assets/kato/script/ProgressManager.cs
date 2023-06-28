@@ -4,14 +4,15 @@ using UnityEngine.SceneManagement;
 public enum SceneName
 {
     TestStage,
-    GameSelect
+    GameSelect,
+    Tutorial
     // 他のシーンの名前
 }
 
 public static class ProgressManager
 {
     public const string KeyActiveLevelIndex = "ActiveLevelIndex";
-
+    public static string[] sceneNames = new string[] { "TestStage", "GameSelect", "Tutorial" };
     public static int GetCompletedLevelIndex()
     {
         return PlayerPrefs.GetInt(KeyActiveLevelIndex, 0);
@@ -36,7 +37,7 @@ public static class ProgressManager
 
     public static void Load(SceneName scene)
     {
-        SceneManager.LoadScene(scene.ToString());
+        SceneManager.LoadScene(sceneNames[(int)scene]);
     }
 
     public static void ClearStage(int levelIndex)

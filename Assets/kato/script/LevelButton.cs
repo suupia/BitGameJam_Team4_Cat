@@ -10,6 +10,7 @@ public class LevelButton : MonoBehaviour
     private Button btn;
     private Image img; // 新たに追加
     private static List<LevelButton> allLevelButtons = new List<LevelButton>();
+    public SceneName sceneToLoad;
 
     void Awake()
     {
@@ -33,7 +34,7 @@ public class LevelButton : MonoBehaviour
 
     void OnButtonClicked()
     {
-        ProgressManager.Load(SceneName.TestStage);
+        ProgressManager.Load(sceneToLoad);
     }
 
     public void RefreshButtonInteractableState()

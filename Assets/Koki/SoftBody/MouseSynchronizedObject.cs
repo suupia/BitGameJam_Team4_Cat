@@ -1,10 +1,11 @@
-using System;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseSynchronizedObject : MonoBehaviour
 {
+
     // スクリーン座標をワールド座標に変換した後の座標
     Vector2 beforePos;
     float maxVeloictyAmount = 50f; // 1fで進めるキョリ
@@ -36,3 +37,4 @@ public class MouseSynchronizedObject : MonoBehaviour
 
     }
 }
+

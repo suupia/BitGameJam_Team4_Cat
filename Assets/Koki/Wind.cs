@@ -5,32 +5,30 @@ using UnityEngine;
 public class Wind : MonoBehaviour
 {
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Rayの長さ
         float rayLength = 30f;
+        float forceAmount = 15f;
 
-        // x軸負方向にRayを出し、それをDebug.DrawRayで表示
-        Debug.DrawRay(transform.position, Vector2.left * rayLength, Color.red);
 
         // Raycastを使って指定レイヤー（Cat）との衝突を検出
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, rayLength, LayerMask.GetMask("Cat"));
+        // x軸負方向にRayを出し、それをDebug.DrawRayで表示
+        Debug.DrawRay(transform.position, Vector2.left * rayLength, Color.red);
 
-        // ヒットした場合にはログを出す
         if (hit.collider != null)
         {
-            // Rigidbody2Dの重力を有効にする
-            GetComponent<Rigidbody2D>().gravityScale = 3.0f;
-        }
-    }
+            var child = hit.transform;
+            var parent = child.parent.gameObject;
 
-    // IcePillarがCatレイヤーに触れたら
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Cat"))
-        {
-            // シーンをリロードする
-            Debug.Log($"風に当たりました");
+            var components = parent.GetComponentsInChildren<Rigidbody2D>();
+            foreach (var rbs in components)
+            {
+                rbs.AddForce(Vector2.left * forceAmount);
+            }
         }
     }
+    
+    
 }

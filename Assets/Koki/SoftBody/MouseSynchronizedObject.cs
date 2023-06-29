@@ -51,7 +51,7 @@ public class MouseSynchronizedObject : MonoBehaviour
         var posY = gameObject.transform.position.y;
         var width = gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
         var height = gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
-        Debug.Log($"width: {width}, height: {height}");
+        // Debug.Log($"width: {width}, height: {height}");
         if(posX - width/2 < afterPos.x && afterPos.x < posX + width/2 &&
             posY - height/2 < afterPos.y && afterPos.y < posY + height/2)
         {

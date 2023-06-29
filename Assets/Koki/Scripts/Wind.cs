@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
-    // Update is called once per frame
+    [SerializeField] float windPower = 10f;
+    
     void FixedUpdate()
     {
         // Rayの長さ
         float rayLength = 30f;
-        float forceAmount = 15f;
 
 
         // Raycastを使って指定レイヤー（Cat）との衝突を検出
@@ -25,7 +25,7 @@ public class Wind : MonoBehaviour
             var components = parent.GetComponentsInChildren<Rigidbody2D>();
             foreach (var rbs in components)
             {
-                rbs.AddForce(Vector2.left * forceAmount);
+                rbs.AddForce(Vector2.left * windPower);
             }
         }
     }

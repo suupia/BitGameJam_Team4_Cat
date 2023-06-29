@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class IcePillar : MonoBehaviour
 {
-    // Update is called once per frame
+    [SerializeField] float gravityScale;
     void Update()
     {
         // Rayの長さ
@@ -21,7 +21,7 @@ public class IcePillar : MonoBehaviour
         if (hit.collider != null)
         {
             // Rigidbody2Dの重力を有効にする
-            GetComponent<Rigidbody2D>().gravityScale = 3.0f;
+            GetComponent<Rigidbody2D>().gravityScale = gravityScale;
         }
     }
 

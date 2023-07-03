@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,11 +10,16 @@ public class MouseSynchronizedObject : MonoBehaviour
     Vector2 beforePos;
     float maxVeloictyAmount = 10f; // 1fで進めるキョリ
     bool isPointerEntered;
-    
 
-    void Update()
+    Rigidbody2D _rb;
+
+    void Start()
     {
+        _rb = GetComponent<Rigidbody2D>();
+    }
 
+    void FixedUpdate()
+    {
         beforePos = gameObject.transform.position;
         // マウス位置座標をスクリーン座標からワールド座標に変換する
         Vector2 afterPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -38,8 +44,9 @@ public class MouseSynchronizedObject : MonoBehaviour
         }
 
         // ワールド座標に変換されたマウス座標を代入
-        // gameObject.transform.position = afterPos;
-        gameObject.transform.position = beforePos + translation;
+        // gameObject.transform.position = beforePos + translation;
+        // gameObject.transform.Translate(translation);
+        _rb.MovePosition(beforePos + translation);
     }
 
     void CheckOnMouseEntered(Vector2 afterPos)
@@ -49,8 +56,8 @@ public class MouseSynchronizedObject : MonoBehaviour
         var width = gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
         var height = gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
         // Debug.Log($"width: {width}, height: {height}");
-        if(posX - width/2 < afterPos.x && afterPos.x < posX + width/2 &&
-            posY - height/2 < afterPos.y && afterPos.y < posY + height/2)
+        if (posX - width / 2 < afterPos.x && afterPos.x < posX + width / 2 &&
+            posY - height / 2 < afterPos.y && afterPos.y < posY + height / 2)
         {
             isPointerEntered = true;
         }

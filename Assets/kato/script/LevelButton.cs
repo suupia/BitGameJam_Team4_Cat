@@ -47,6 +47,7 @@ public class LevelButton : MonoBehaviour
 
         // もしButtonが押せる(isButtonInteractable == true)なら透明度を1（全く透明でない）に、そうでないなら透明度を0.5（半透明）に設定
         img.color = new Color(img.color.r, img.color.g, img.color.b, isButtonInteractable ? 1f : 0.5f);
+        buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, isButtonInteractable ? 1f : 0.5f);
         Debug.Log($"img = {img}");
     }
 

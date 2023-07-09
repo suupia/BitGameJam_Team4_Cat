@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CupInCat : MonoBehaviour
 {
-    public GameObject btn;
-    // Start is called before the first frame update
+    [SerializeField] GameObject backSelectStageButton;
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("a");
         if (other.gameObject.layer == LayerMask.NameToLayer("Cat"))
         {
-            Debug.Log("b");
-            btn.SetActive(true);
+            backSelectStageButton.SetActive(true);
         }
     }
 }

@@ -20,14 +20,15 @@ public class MusicController : MonoBehaviour
 
     [SerializeField] AudioClip titleBGM;
     [SerializeField] AudioClip stageBGM;
-    
+
 
     readonly Subject<Scene> _sceneLoadedSubject = new Subject<Scene>();
 
+    static bool _isCreated = false; // DontDestroyOnLoadで生成されたオブジェクトが2つ以上できないようにstaticなフラグを持たせる
+
     void Start()
     {
-        DontDestroyOnLoad(musicCanvas);
-
+        // シーン読み混みのたびに行う
         bgmSlider.onValueChanged.AddListener((value) => { bgmAudioSource.volume = value; });
         seSlider.onValueChanged.AddListener((value) => { seAudioSource.volume = value; });
 
@@ -35,8 +36,18 @@ public class MusicController : MonoBehaviour
         bgmSlider.value = 0.5f;
         seSlider.value = 0.5f;
 
+        // 以下の処理はゲーム起動から一回しか行わない
+        if (_isCreated)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(musicCanvas);
+
+
         SceneManager.sceneLoaded += OnSceneLoaded;
-        
+
         // 最初のシーンは登録するよりも前に読み込まれるので、タイトルシーンから始まると認めて、タイトルBGMを再生する
         PlayTitleBGM();
 
@@ -52,14 +63,17 @@ public class MusicController : MonoBehaviour
                 PlayStageBGM();
             }
         });
+        
+        _isCreated = true;
+
     }
 
-     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         _sceneLoadedSubject.OnNext(scene);
     }
 
-     void OnDestroy()
+    void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
         _sceneLoadedSubject.Dispose();
@@ -70,17 +84,17 @@ public class MusicController : MonoBehaviour
         bgmAudioSource.clip = titleBGM;
         bgmAudioSource.Play();
     }
-    
+
     void PlayStageBGM()
     {
         float fadeInDuration = 1.0f;
-        
+
         Debug.Log($"PlayerStageBGM");
-        
+
         // 既にステージBGMが再生されている場合は何もしない
-        if(bgmAudioSource.clip == stageBGM) return;
+        if (bgmAudioSource.clip == stageBGM) return;
         bgmAudioSource.clip = stageBGM;
-        
+
         // シーンの読み込み中にKillされているみたいで、うまくフェードインできない　→　SceneTransitionクラスを作成して、それをSubscribeしたらいけるはず
         // bgmAudioSource.DOFade(bgmSlider.value, fadeInDuration).SetEase(Ease.InQuad).Play(); 
         bgmAudioSource.Play();

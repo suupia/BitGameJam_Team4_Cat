@@ -41,13 +41,13 @@ public class ClearEffectStarter : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartEffect();
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         StartEffect();
+    //     }
+    // }
 
     public void StartEffect()
     {

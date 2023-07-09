@@ -49,5 +49,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# 自分で追加
-UserSettings/Layouts/
+# UserSettings
+UserSettings/

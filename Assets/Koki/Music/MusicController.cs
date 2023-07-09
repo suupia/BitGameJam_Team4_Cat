@@ -28,7 +28,13 @@ public class MusicController : MonoBehaviour
 
     void Start()
     {
-        // シーン読み混みのたびに行う
+        if (_isCreated)
+        {
+            Destroy(musicCanvas);
+            return;
+        }
+        Debug.Log($"MusicControllerのStart()");
+
         bgmSlider.onValueChanged.AddListener((value) => { bgmAudioSource.volume = value; });
         seSlider.onValueChanged.AddListener((value) => { seAudioSource.volume = value; });
 
@@ -36,12 +42,6 @@ public class MusicController : MonoBehaviour
         bgmSlider.value = 0.5f;
         seSlider.value = 0.5f;
 
-        // 以下の処理はゲーム起動から一回しか行わない
-        if (_isCreated)
-        {
-            Destroy(gameObject);
-            return;
-        }
 
         DontDestroyOnLoad(musicCanvas);
 

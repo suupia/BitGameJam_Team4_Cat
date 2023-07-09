@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BackSelectStageButton
   layers:
   - Default
   - TransparentFX
@@ -41,9 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Spoon
-    uniqueID: 937895395
-    locked: 0
   - name: Cat
     uniqueID: 304094705
+    locked: 0
+  - name: Spoon
+    uniqueID: 937895395
     locked: 0

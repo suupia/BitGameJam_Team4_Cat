@@ -10,7 +10,6 @@ public class returnButton : MonoBehaviour
     {
         btn = GetComponent<Button>();
         btn.onClick.AddListener(OnButtonClicked);
-        this.gameObject.SetActive(false);
     }
 
     void OnButtonClicked()

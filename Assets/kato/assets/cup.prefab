@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 7070873581602145089}
   - component: {fileID: 4910971056633951720}
   m_Layer: 0
-  m_Name: InCheck
+  m_Name: CatInChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,7 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395855763885a4a42afa62da2774f280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backSelectStageButton: {fileID: 0}
 --- !u!1 &7070873581864907572
 GameObject:
   m_ObjectHideFlags: 0

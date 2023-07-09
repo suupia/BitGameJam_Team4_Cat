@@ -4,13 +4,15 @@ using UnityEngine.SceneManagement;
 
 public enum SceneName
 {
-    TestStage,
+    GameTitle,
     GameSelect,
     Tutorial,
     
     Stage1,
     Stage2,
     Stage3,
+    
+    TestStage,
     // 他のシーンの名前
 }
 

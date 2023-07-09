@@ -8,7 +8,7 @@ public class MouseSynchronizedObject : MonoBehaviour
 {
     // スクリーン座標をワールド座標に変換した後の座標
     Vector2 beforePos;
-    float maxVeloictyAmount = 10f; // 1fで進めるキョリ
+    float maxVeloictyAmount = 16f; // 1fで進めるキョリ
     bool isPointerEntered;
 
     Rigidbody2D _rb;

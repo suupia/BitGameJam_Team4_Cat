@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using TMPro;
 
 
 public class LevelButton : MonoBehaviour
@@ -9,6 +10,7 @@ public class LevelButton : MonoBehaviour
     public int levelIndex;
     public SceneName sceneToLoad;
     [SerializeField] Image img; // 新たに追加
+    [SerializeField] TextMeshProUGUI buttonText;
     private static List<LevelButton> allLevelButtons = new List<LevelButton>();
     private Button btn;
 
@@ -29,6 +31,8 @@ public class LevelButton : MonoBehaviour
         btn = GetComponent<Button>();
         RefreshButtonInteractableState();
         btn.onClick.AddListener(OnButtonClicked);
+
+        buttonText.text = sceneToLoad.ToString();
     }
 
     void OnButtonClicked()

@@ -14,6 +14,10 @@ public class OpenMusicCanvasButton : MonoBehaviour
     void Start()
     {
         _button = GetComponent<Button>();
-        _button.onClick.AddListener(()=> volumeCanvas.SetActive(true));
+        _button.onClick.AddListener(()=>
+        {
+            volumeCanvas.SetActive(true);
+            FindObjectOfType<MusicController>().PlayButtonSE();
+        });
     }
 }

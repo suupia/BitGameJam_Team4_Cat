@@ -16,5 +16,6 @@ public class StartButton : MonoBehaviour
     {
         //セレクトシーンに移行
         ProgressManager.Load(SceneName.GameSelect);
+        FindObjectOfType<MusicController>().PlayButtonSE();
     }
 }

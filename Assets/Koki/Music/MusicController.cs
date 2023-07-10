@@ -21,6 +21,9 @@ public class MusicController : MonoBehaviour
     [SerializeField] AudioClip titleBGM;
     [SerializeField] AudioClip stageBGM;
 
+    [SerializeField] AudioClip buttonSE;
+    [SerializeField] AudioClip selectStageSE;
+
 
     readonly Subject<Scene> _sceneLoadedSubject = new Subject<Scene>();
 
@@ -66,7 +69,16 @@ public class MusicController : MonoBehaviour
         _isCreated = true;
 
     }
-
+    
+    public void PlayButtonSE()
+    {
+        seAudioSource.PlayOneShot(buttonSE);
+    }
+    public void PlaySelectStageSE()
+    {
+        seAudioSource.PlayOneShot(selectStageSE);
+    }
+    
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         _sceneLoadedSubject.OnNext(scene);
@@ -98,4 +110,6 @@ public class MusicController : MonoBehaviour
         // bgmAudioSource.DOFade(bgmSlider.value, fadeInDuration).SetEase(Ease.InQuad).Play(); 
         bgmAudioSource.Play();
     }
+
+
 }

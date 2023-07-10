@@ -14,5 +14,6 @@ public class QuitButton : MonoBehaviour
 //ゲームプレイ終了
     Application.Quit();
 #endif
+        FindObjectOfType<MusicController>().PlayButtonSE();
     }
 }

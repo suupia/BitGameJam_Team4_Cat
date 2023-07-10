@@ -38,6 +38,8 @@ public class LevelButton : MonoBehaviour
     void OnButtonClicked()
     {
         ProgressManager.Load(sceneToLoad);
+        FindObjectOfType<MusicController>().PlaySelectStageSE();
+
     }
 
     public void RefreshButtonInteractableState()

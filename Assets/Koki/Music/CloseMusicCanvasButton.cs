@@ -13,6 +13,11 @@ public class CloseMusicCanvasButton : MonoBehaviour
     void Start()
     {
         _button = GetComponent<Button>();
-        _button.onClick.AddListener(()=> closeCanvas.SetActive(false));
+        _button.onClick.AddListener(()=>
+        {
+            closeCanvas.SetActive(false);
+            FindObjectOfType<MusicController>().PlayButtonSE();
+
+        });
     }
 }

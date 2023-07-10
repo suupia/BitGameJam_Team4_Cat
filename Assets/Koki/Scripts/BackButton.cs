@@ -14,5 +14,7 @@ public class BackButton : MonoBehaviour
     void ReturnToGameSelect()
     {
         ProgressManager.Load(SceneName.GameSelect);
+        FindObjectOfType<MusicController>().PlayButtonSE();
+
     }
 }

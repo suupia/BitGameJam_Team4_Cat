@@ -13,5 +13,7 @@ public class ResetButton : MonoBehaviour
     private void OnButtonClicked()
     {
         ProgressManager.ResetLevelIndex();
+        FindObjectOfType<MusicController>().PlayButtonSE();
+
     }
 }

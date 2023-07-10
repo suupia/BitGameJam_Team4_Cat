@@ -13,6 +13,10 @@ public class ReturnToTitleButton : MonoBehaviour
     void Start()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(() => ProgressManager.Load(SceneName.GameTitle));
+        button.onClick.AddListener(() =>
+        {
+            ProgressManager.Load(SceneName.GameTitle);
+            FindObjectOfType<MusicController>().PlayButtonSE();
+        });
     }
 }

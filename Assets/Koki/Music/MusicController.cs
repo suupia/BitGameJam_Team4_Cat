@@ -33,7 +33,6 @@ public class MusicController : MonoBehaviour
             Destroy(musicCanvas);
             return;
         }
-        Debug.Log($"MusicControllerのStart()");
 
         bgmSlider.onValueChanged.AddListener((value) => { bgmAudioSource.volume = value; });
         seSlider.onValueChanged.AddListener((value) => { seAudioSource.volume = value; });

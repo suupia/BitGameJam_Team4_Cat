@@ -434,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: sceneToLoad
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7863101322647033892, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: m_RootOrder
@@ -656,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: sceneToLoad
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7863101322647033892, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: m_RootOrder
@@ -805,8 +805,12 @@ PrefabInstance:
       value: SelectStageButton (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
+      propertyPath: levelIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: sceneToLoad
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7863101322647033892, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: m_RootOrder
@@ -961,6 +965,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 233948503}
     m_Modifications:
+    - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
+      propertyPath: levelIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
+      propertyPath: sceneToLoad
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7863101322647033892, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1206,7 +1218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: levelIndex
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: sceneToLoad
@@ -1613,7 +1625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: levelIndex
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3949485685227734226, guid: 21916d8908659bd4fb5fa810d4ea797e, type: 3}
       propertyPath: sceneToLoad

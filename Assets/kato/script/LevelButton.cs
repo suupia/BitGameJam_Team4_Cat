@@ -33,7 +33,7 @@ public class LevelButton : MonoBehaviour
         btn.onClick.AddListener(OnButtonClicked);
 
         // buttonText.text = sceneToLoad.ToString();
-        buttonText.text = $"Stage {levelIndex}";
+        buttonText.text = levelIndex != 0 ? $"Stage {levelIndex}" : "Tutorial";
     }
 
     void OnButtonClicked()

@@ -15,7 +15,7 @@ public class returnButton : MonoBehaviour
     void OnButtonClicked()
     {
         ProgressManager.ClearStage(levelIndex);
-        FindObjectOfType<MusicController>().PlayButtonSE();
+        FindObjectOfType<MusicController>()?.PlayButtonSE();
 
     }
 }

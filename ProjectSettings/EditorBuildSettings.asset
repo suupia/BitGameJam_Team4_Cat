@@ -36,10 +36,19 @@ EditorBuildSettings:
     path: Assets/Scenes/StagesScene/SasakiStageC.unity
     guid: 330ea4ca56dacba4192fbcef1eb0c928
   - enabled: 1
+    path: Assets/Scenes/StagesScene/HamanoStageA.unity
+    guid: 083793cd21b105342af515a715e1f8df
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/HamanoStageB.unity
+    guid: 81090987a8a55a748887df0b5eb15108
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/HamanoStageC.unity
+    guid: c13ce9fa331f9c44a880038045318563
+  - enabled: 1
     path: Assets/Scenes/StagesScene/tutorial.unity
     guid: b613a18e9e3d56c42be48a25f93eabe5
   - enabled: 1
-    path: Assets/Scenes/StagesScene/demo.unity
+    path: Assets/demo.unity
     guid: e47c1a56d53c2244e97339e1f07f25f8
   - enabled: 1
     path: Assets/Scenes/testStage.unity

@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7070873581864907571, guid: 2b6134cde9ba7c648b08d17bb4048baa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.15
+      value: 6.46
       objectReference: {fileID: 0}
     - target: {fileID: 7070873581864907571, guid: 2b6134cde9ba7c648b08d17bb4048baa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -426,11 +426,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4402191787394789289, guid: 8110f0e4e130b43498d5b7433436659b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4402191787394789289, guid: 8110f0e4e130b43498d5b7433436659b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.16
+      value: 7.28
       objectReference: {fileID: 0}
     - target: {fileID: 4402191787394789289, guid: 8110f0e4e130b43498d5b7433436659b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1215,6 +1215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2972653019889954747, guid: 1c295071bac8fd848b59b72ca6c27ca0, type: 3}
+      propertyPath: levelIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8087991235166410923, guid: 1c295071bac8fd848b59b72ca6c27ca0, type: 3}
       propertyPath: m_Name
       value: UICanvas

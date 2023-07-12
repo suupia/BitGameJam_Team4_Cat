@@ -26,6 +26,10 @@ public enum SceneName
     KatoStageA,
     KatoStageB,
     KatoStageC,
+    
+    HamanoStageA,
+    HamanoStageB,
+    HamanoStageC,
 }
 
 public static class ProgressManager

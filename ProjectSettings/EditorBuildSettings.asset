@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameSelect.unity
     guid: e20d38b8669236c47973cd29f9836784
   - enabled: 1
-    path: Assets/Scenes/StagesScene/Stage1.unity
+    path: Assets/Stage1.unity
     guid: 47a57309cdce2b8428a73d2a1b71aeba
   - enabled: 1
     path: Assets/Scenes/StagesScene/Stage2.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StagesScene/tutorial.unity
     guid: b613a18e9e3d56c42be48a25f93eabe5
   - enabled: 1
-    path: Assets/Scenes/StagesScene/demo.unity
+    path: Assets/demo.unity
     guid: e47c1a56d53c2244e97339e1f07f25f8
   - enabled: 1
     path: Assets/Scenes/testStage.unity

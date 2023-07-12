@@ -39,7 +39,7 @@ public class LevelButton : MonoBehaviour
     void OnButtonClicked()
     {
         ProgressManager.Load(sceneToLoad);
-        FindObjectOfType<MusicController>().PlaySelectStageSE();
+        FindObjectOfType<MusicController>()?.PlaySelectStageSE();
 
     }
 

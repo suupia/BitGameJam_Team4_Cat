@@ -21,6 +21,21 @@ EditorBuildSettings:
     path: Assets/Scenes/StagesScene/FirstStageC.unity
     guid: 0b4643c29f65d4cf5bbda5ea238ec585
   - enabled: 1
+    path: Assets/Scenes/StagesScene/KatoStageA.unity
+    guid: 96d02ca8e9d580f46aac74e605a58e8f
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/KatoStageB.unity
+    guid: 0a13bad908ca1bd47a7f6932af725f02
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/SasakiStageA.unity
+    guid: 58340bfbb47d3461a92ba441400a2f73
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/SasakiStageB.unity
+    guid: 89bd03a7857814fcabfa3223d7670a75
+  - enabled: 1
+    path: Assets/Scenes/StagesScene/SasakiStageC.unity
+    guid: 330ea4ca56dacba4192fbcef1eb0c928
+  - enabled: 1
     path: Assets/Scenes/StagesScene/tutorial.unity
     guid: b613a18e9e3d56c42be48a25f93eabe5
   - enabled: 1

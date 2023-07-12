@@ -14,6 +14,18 @@ public enum SceneName
     
     TestStage,
     // 他のシーンの名前
+    
+    FirstStageA,
+    FirstStageB,
+    FirstStageC,
+    
+    SasakiStageA,
+    SasakiStageB,
+    SasakiStageC,
+    
+    TubasaStageA,
+    TubasaStageB,
+    TubasaStageC,
 }
 
 public static class ProgressManager

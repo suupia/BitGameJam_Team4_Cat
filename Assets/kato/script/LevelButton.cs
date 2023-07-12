@@ -32,7 +32,8 @@ public class LevelButton : MonoBehaviour
         RefreshButtonInteractableState();
         btn.onClick.AddListener(OnButtonClicked);
 
-        buttonText.text = sceneToLoad.ToString();
+        // buttonText.text = sceneToLoad.ToString();
+        buttonText.text = $"Stage {levelIndex}";
     }
 
     void OnButtonClicked()

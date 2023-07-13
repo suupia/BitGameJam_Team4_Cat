@@ -1313,6 +1313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks
       objectReference: {fileID: 0}
+    - target: {fileID: 2931330613205560306, guid: beb395586c9f7ee409c21bdb4cb16404, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2931330613205560307, guid: beb395586c9f7ee409c21bdb4cb16404, type: 3}
       propertyPath: m_RootOrder
       value: 11

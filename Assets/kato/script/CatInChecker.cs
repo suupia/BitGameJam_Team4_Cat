@@ -10,6 +10,7 @@ public class CatInChecker : MonoBehaviour
 {
     GameObject _backSelectStageButton;
     ClearEffectStarter _clearEffectStarter;
+    public bool IsClear => _isClear;
     bool _isClear = false;
 
     protected void Start()

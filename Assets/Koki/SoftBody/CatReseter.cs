@@ -13,7 +13,7 @@ public class CatReseter : MonoBehaviour
         var pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         var x = pos.x;
         var y = pos.y;
-        Debug.Log($"x: {x}, y: {y}, Screen.width: {Screen.width}, Screen.height: {Screen.height}");
+        // Debug.Log($"x: {x}, y: {y}, Screen.width: {Screen.width}, Screen.height: {Screen.height}");
         if( x <- _boundaryX 
             || x > Screen.width + _boundaryX 
             || y <  - _boundaryY 

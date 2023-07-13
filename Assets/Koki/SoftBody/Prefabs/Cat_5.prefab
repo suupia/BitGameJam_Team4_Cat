@@ -617,7 +617,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 304094705
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d51ec2d4479718a429a3775fd7a75995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1472,6 +1472,7 @@ GameObject:
   - component: {fileID: 7648537329383795083}
   - component: {fileID: 7648537329383795189}
   - component: {fileID: 7648537329383795188}
+  - component: {fileID: 598657682625229065}
   m_Layer: 7
   m_Name: center_bone
   m_TagString: Untagged
@@ -1536,6 +1537,18 @@ MonoBehaviour:
   pos2: {fileID: 7648537329345677492}
   pos3: {fileID: 7648537328733487856}
   offset: {x: 0, y: 0}
+--- !u!114 &598657682625229065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648537329383795082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e33baf1796d08448fda7f297c85211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7648537329421465104
 GameObject:
   m_ObjectHideFlags: 0

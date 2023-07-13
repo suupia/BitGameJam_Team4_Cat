@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 7361147372081532777}
   - component: {fileID: 7361147372081532775}
   - component: {fileID: 7361147372081532776}
+  - component: {fileID: 1128701746948175715}
   m_Layer: 7
   m_Name: center_bone
   m_TagString: Untagged
@@ -873,6 +874,18 @@ MonoBehaviour:
   pos2: {fileID: 7361147372763692889}
   pos3: {fileID: 7361147373401780547}
   offset: {x: 0, y: 0}
+--- !u!114 &1128701746948175715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361147372081532778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e33baf1796d08448fda7f297c85211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7361147372149741271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 304094705
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3edea329cc614e644b266777f2c3adb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

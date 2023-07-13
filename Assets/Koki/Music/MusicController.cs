@@ -11,6 +11,8 @@ using UnityEditor.Rendering;
 
 public class MusicController : MonoBehaviour
 {
+    public float SeVolume => seSlider.value;
+    
     [SerializeField] GameObject musicCanvas; // このスクリプトがアタッチされているオブジェクトの親であるCanvas
     [SerializeField] Slider bgmSlider;
     [SerializeField] Slider seSlider;

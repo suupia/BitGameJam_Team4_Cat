@@ -51,8 +51,14 @@ public class ClearEffectStarter : MonoBehaviour
 
     public void StartEffect()
     {
+
+        
         foreach (var timedAudioSource in timedAudioSources)
         {
+            // SEの音量を調整する
+            var musicController = FindObjectOfType<MusicController>();
+            if(musicController != null) timedAudioSource.audioSource.volume = musicController.SeVolume;
+            
             StartCoroutine(StartAfterDelay(timedAudioSource.audioSource.Play, timedAudioSource.startTime));
         }
         foreach (var timedParticleSystem in timedParticleSystems)

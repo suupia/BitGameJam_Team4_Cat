@@ -1802,7 +1802,7 @@ MonoBehaviour:
   pos1: {fileID: 645550929134412948}
   pos2: {fileID: 645550929395074764}
   pos3: {fileID: 645550929134297982}
-  offset: {x: 0.7, y: -7}
+  offset: {x: 0.7, y: -0.7}
 --- !u!114 &2009323897342606029
 MonoBehaviour:
   m_ObjectHideFlags: 0

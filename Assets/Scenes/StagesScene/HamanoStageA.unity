@@ -472,6 +472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fan
       objectReference: {fileID: 0}
+    - target: {fileID: 4402191787394789291, guid: 8110f0e4e130b43498d5b7433436659b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8110f0e4e130b43498d5b7433436659b, type: 3}
 --- !u!4 &608254098 stripped

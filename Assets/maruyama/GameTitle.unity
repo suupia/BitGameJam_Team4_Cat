@@ -255,7 +255,7 @@ MonoBehaviour:
   seAudioSource: {fileID: 829002191}
   titleBGM: {fileID: 8300000, guid: c0a19497a5dda264b87d120b79cebe73, type: 3}
   stageBGM: {fileID: 8300000, guid: 4235aedf2cb7a7549870dd1e840baeb2, type: 3}
-  buttonSE: {fileID: 8300000, guid: d2b13ba846e5ccc45b7d39541ded9fc8, type: 3}
+  buttonSE: {fileID: 8300000, guid: 8d77c74fcf9ad4fddbcbf6fc5c028a70, type: 3}
   selectStageSE: {fileID: 8300000, guid: a6edf6b7bc944de4b94230de5b2daa8a, type: 3}
 --- !u!1 &94008013
 GameObject:

@@ -12,8 +12,9 @@ public class CatInChecker : MonoBehaviour
     ClearEffectStarter _clearEffectStarter;
     bool _isClear = false;
 
-    void Start()
+    protected void Start()
     {
+        // Debug.Log($"{this.GetType()} Start()");
         _backSelectStageButton = GameObject.FindGameObjectWithTag("BackSelectStageButton");
         _backSelectStageButton.SetActive(false);
 
@@ -27,8 +28,10 @@ public class CatInChecker : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected void OnTriggerEnter2D(Collider2D other)
     {
+        // Debug.Log($"{this.GetType()} OnTriggerEnter2D()");
+
         if (other.gameObject.layer == LayerMask.NameToLayer("Cat"))
         {
             _isClear = true;
